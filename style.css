@@ -491,216 +491,56 @@ body{
 
 
 /* =====================================================
-   RESULT SECTION TITLE
+   RESULT SECTION
+   STANDARD STYLE FOR ALL CALCULATORS
 ===================================================== */
-
-
-.result-title{
-
-
-    text-align:center;
-
-    color:#1f4e79;
-
-    font-size:18px;
-
-    font-weight:bold;
-
-    margin-bottom:15px;
-
-
-}
-/* =====================================================
-   BUTTON SYSTEM
-===================================================== */
-
-
-/* Button container */
-
-.button-group{
-
-
-    display:flex;
-
-
-    gap:12px;
-
-
-    margin-top:20px;
-
-
-    margin-bottom:20px;
-
-
-}
-
-
-
-/* Standard button */
-
-
-.btn,
-.button-group button{
-
-
-    flex:1;
-
-
-    border:none;
-
-
-    padding:12px;
-
-
-    border-radius:8px;
-
-
-    font-size:16px;
-
-
-    font-weight:bold;
-
-
-    cursor:pointer;
-
-
-    transition:.2s;
-
-
-    background:#1f4e79;
-
-
-    color:white;
-
-
-}
-
-
-
-
-.button-group button:hover{
-
-
-    opacity:.9;
-
-
-}
-
-
-
-/* Primary button */
-
-
-.btn-primary{
-
-
-    background:#1f4e79;
-
-
-    color:white;
-
-
-}
-
-
-
-.btn-primary:hover{
-
-
-    background:#163a5c;
-
-
-}
-
-
-
-/* Reset button standard */
-
-
-.btn-reset,
-.reset-btn{
-
-
-    background:#dc3545 !important;
-
-
-    color:white;
-
-
-}
-
-
-
-.btn-reset:hover,
-.reset-btn:hover{
-
-
-    background:#b52a37 !important;
-
-
-}
-
-
-
-
-
-
-
-/* =====================================================
-   RESULT BOX
-===================================================== */
-
 
 .result-box,
 .result-section{
 
-
     background:#f8fafc;
 
-
-    border-left:
-
-    5px solid #1f4e79;
-
-
-    padding:15px;
-
+    border-left:5px solid #1f4e79;
 
     border-radius:8px;
 
+    padding:15px 18px;
 
     margin-top:20px;
 
-
 }
 
 
+/* =====================================================
+   RESULT TITLE
+   STANDARD FOR ALL CALCULATORS
+===================================================== */
 
-
+.result-title,
 .result-box h3,
 .result-section h3{
 
+    display:block;
+
+    width:100%;
+
+    margin:0 0 12px;
+
+    padding:0;
 
     text-align:center;
 
+    font-family:Arial, Helvetica, sans-serif;
+
+    font-size:20px;
+
+    font-weight:700;
+
+    line-height:1.2;
 
     color:#1f4e79;
 
-
-    font-size:18px;
-
-
-    font-weight:bold;
-
-
-    margin-bottom:15px;
-
-
 }
-
-
-
-
 
 
 /* =====================================================
@@ -1591,140 +1431,59 @@ input[type=number]::-webkit-outer-spin-button{
 
 }
 
-
 /* =====================================================
-   GGN DAY RESULT - MATCH GGN WEEK STYLE
+   GGN DAY RESULT
+   MATCH GGN WEEK STYLE
 ===================================================== */
-
-
-.ggn-day-card .result-row{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:8px 0;
-
-}
-
-
-
-.ggn-day-card .result-row label{
-
-    font-weight:600;
-
-    color:#333;
-
-}
-
-
-
-.ggn-day-card .result-row span{
-
-    font-weight:bold;
-
-    color:#111;
-
-    text-align:right;
-
-}
-
-
 
 .ggn-day-card .result-section{
 
-    background:#f7f9fc;
+    background:#f8fafc;
 
-    border-left:3px solid #1f4e8c;
+    border-left:5px solid #1f4e79;
 
     border-radius:8px;
 
-    padding:12px;
+    padding:15px 18px;
 
-}
-
-
-
-.ggn-day-card .result-title{
-
-    text-align:center;
-
-    color:#1f4e8c;
-
-    margin-bottom:10px;
-
-}
-
-/* =====================================================
-   GGN HARI - SAMAKAN SPACING DENGAN GGN MINGGU
-===================================================== */
-
-.ggn-day-card .result-row,
-.ggn-week-card .result-row {
-
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    padding: 12px 0;
-
-    border-bottom: 1px solid #eee;
-}
-
-
-.ggn-day-card .result-row:last-child,
-.ggn-week-card .result-row:last-child {
-
-    border-bottom: none;
-
-}
-
-
-.ggn-day-card .result-label,
-.ggn-week-card .result-label {
-
-    font-weight: 600;
-    color: #333;
-
-}
-
-
-.ggn-day-card .result-value,
-.ggn-week-card .result-value {
-
-    font-weight: bold;
-    text-align: right;
-
-}
-/*=====================================================
-GGN HARI - FORMAT KEPUTUSAN (SAMA SEPERTI GGN MINGGU)
-=====================================================*/
-
-.ggn-day-card .result-section{
-    background:#f7f8fb;
-    border-left:4px solid #1d4f91;
-    border-radius:8px;
-    padding:14px 18px;
     margin-top:20px;
+
 }
 
 .ggn-day-card .result-title{
+
+    display:block;
+
+    width:100%;
+
     margin:0 0 12px;
+
+    padding:0;
+
     text-align:center;
-    color:#1d4f91;
-    font-size:22px;
+
+    font-family:Arial, Helvetica, sans-serif;
+
+    font-size:20px;
+
     font-weight:700;
+
+    line-height:1.2;
+
+    color:#1f4e79;
+
 }
 
 .ggn-day-card .result-row{
 
     display:flex;
+
     justify-content:space-between;
+
     align-items:center;
 
     padding:2px 0;
+
     margin:0;
 
     border:none;
@@ -1734,8 +1493,10 @@ GGN HARI - FORMAT KEPUTUSAN (SAMA SEPERTI GGN MINGGU)
 .ggn-day-card .result-label{
 
     font-size:14px;
+
     font-weight:600;
-    color:#000;
+
+    color:#333;
 
     line-height:1.3;
 
@@ -1746,8 +1507,10 @@ GGN HARI - FORMAT KEPUTUSAN (SAMA SEPERTI GGN MINGGU)
 .ggn-day-card .result-value{
 
     font-size:14px;
+
     font-weight:700;
-    color:#000;
+
+    color:#111;
 
     line-height:1.3;
 
