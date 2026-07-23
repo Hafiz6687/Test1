@@ -3059,20 +3059,21 @@ console.log(
         "ggnDayEndDate",
         formatDateInput(end)
     );
+setText(
+    "ggnDayResultEndDate",
+    end.toLocaleDateString("ms-MY")
+);
 
-
-
-setValue(
+setText(
     "ggnDayResultDays",
     days+" Hari"
 );
 
 
-setValue(
+setText(
     "ggnDayAmount",
     formatRM(amount)
 );
-
 
 console.log(
     "OUTPUT CHECK:",
@@ -3110,13 +3111,20 @@ function resetGGNDay(){
     );
 
 
-  setValue(
+
+    setText(
     "ggnDayResultDays",
     "0 Hari"
 );
 
 
-setValue(
+setText(
+    "ggnDayResultEndDate",
+    "-"
+);
+
+
+setText(
     "ggnDayAmount",
     "RM 0.00"
 );
