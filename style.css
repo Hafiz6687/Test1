@@ -435,7 +435,31 @@ body{
 
 }
 
+/* =====================================================
+   RESULT VALUE WITHOUT GREY BOX
+   Used by:
+   - GGN Day Result
+===================================================== */
 
+.result-value{
+
+    border:none;
+
+    background:transparent;
+
+    text-align:right;
+
+    font-weight:bold;
+
+    color:#333;
+
+    width:100%;
+
+    padding:5px;
+
+    outline:none;
+
+}
 
 
 .number-input{
