@@ -1657,7 +1657,47 @@ input[type=number]::-webkit-outer-spin-button{
 
 }
 
+/* =====================================================
+   GGN HARI - SAMAKAN SPACING DENGAN GGN MINGGU
+===================================================== */
 
+.ggn-day-card .result-row,
+.ggn-week-card .result-row {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 12px 0;
+
+    border-bottom: 1px solid #eee;
+}
+
+
+.ggn-day-card .result-row:last-child,
+.ggn-week-card .result-row:last-child {
+
+    border-bottom: none;
+
+}
+
+
+.ggn-day-card .result-label,
+.ggn-week-card .result-label {
+
+    font-weight: 600;
+    color: #333;
+
+}
+
+
+.ggn-day-card .result-value,
+.ggn-week-card .result-value {
+
+    font-weight: bold;
+    text-align: right;
+
+}
 
 /* =====================================================
    END
