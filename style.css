@@ -1,0 +1,1576 @@
+/* =====================================================
+   KALKULATOR AKTA KERJA 1955
+   PROFESSIONAL STYLE.CSS
+   FINAL PATCH V2
+   PART 1/3
+===================================================== */
+
+
+/* =====================================================
+   GLOBAL RESET
+===================================================== */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+
+    font-family:
+    Arial,
+    Helvetica,
+    sans-serif;
+
+}
+
+
+
+
+/* =====================================================
+   BODY
+===================================================== */
+
+
+body{
+
+    background:#f4f6f9;
+
+    min-height:100vh;
+
+    padding:20px;
+
+}
+
+
+
+/* =====================================================
+   MAIN WRAPPER
+===================================================== */
+
+
+.wrapper{
+
+    width:100%;
+
+    max-width:1600px;
+
+    margin:auto;
+
+}
+
+
+
+/* =====================================================
+   PAGE TITLE
+===================================================== */
+
+
+.page-title{
+
+    text-align:center;
+
+    margin-bottom:30px;
+
+}
+
+
+
+.page-title h1{
+
+    font-size:36px;
+
+    font-weight:700;
+
+    color:#1f4e79;
+
+    margin-bottom:10px;
+
+}
+
+
+
+.page-title p{
+
+    font-size:16px;
+
+    line-height:1.6;
+
+    color:#555;
+
+}
+
+
+
+
+/* =====================================================
+   CALCULATOR GRID
+===================================================== */
+
+
+.calculator-grid{
+
+    display:grid;
+
+    grid-template-columns:
+
+    repeat(
+        auto-fit,
+        minmax(320px,1fr)
+    );
+
+
+    gap:20px;
+
+    align-items:start;
+
+}
+
+
+
+/* =====================================================
+   CALCULATOR CARD
+===================================================== */
+
+
+.calculator-card{
+
+
+    background:white;
+
+    border-radius:15px;
+
+    padding:22px;
+
+
+    box-shadow:
+
+    0 8px 18px
+
+    rgba(
+        0,
+        0,
+        0,
+        0.12
+    );
+
+
+    transition:
+
+    transform .2s ease,
+
+    box-shadow .2s ease;
+
+
+    height:auto;
+
+
+}
+
+
+
+.calculator-card:hover{
+
+
+    transform:
+    translateY(-3px);
+
+
+    box-shadow:
+
+    0 12px 25px
+
+    rgba(
+        0,
+        0,
+        0,
+        0.15
+    );
+
+
+}
+
+
+
+/* =====================================================
+   LARGE CARD
+===================================================== */
+
+
+.calculator-card-large{
+
+
+    height:auto;
+
+    min-height:unset;
+
+
+}
+
+
+
+
+
+/* =====================================================
+   GGN DAY CARD PATCH
+   Kalkulator Gaji Ganti Notis
+   Jenis Tempoh (Hari)
+===================================================== */
+
+
+.ggn-day-card{
+
+
+    width:100%;
+
+
+}
+
+
+
+.ggn-day-card h2{
+
+
+    text-align:center;
+
+    color:#1f4e79;
+
+    font-size:24px;
+
+    line-height:1.3;
+
+    margin-bottom:4px;
+
+
+}
+
+
+
+.ggn-day-card .notice-type-title{
+
+
+    text-align:center;
+
+    color:#1f4e79;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   CARD TITLE
+===================================================== */
+
+
+.calculator-card h2{
+
+
+    text-align:center;
+
+    color:#1f4e79;
+
+    font-size:24px;
+
+    line-height:1.3;
+
+    margin-bottom:4px;
+
+
+}
+
+
+
+
+
+.calculator-card > h2 + h3{
+
+
+    text-align:center;
+
+    color:#1f4e79;
+
+    font-size:16px;
+
+    font-weight:600;
+
+    line-height:1.3;
+
+    margin-top:0;
+
+    margin-bottom:18px;
+
+
+}
+
+
+
+
+
+/* =====================================================
+   FORM GROUP
+===================================================== */
+
+
+.form-group{
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+.form-group label{
+
+
+    display:block;
+
+
+    font-weight:bold;
+
+
+    margin-bottom:6px;
+
+
+    color:#333;
+
+
+}
+
+
+
+
+
+/* =====================================================
+   INPUT STANDARD
+===================================================== */
+
+
+.salary-input,
+.salary-total,
+.number-input,
+.date-input,
+.select-input,
+.ggn-day-card input{
+
+
+    width:100%;
+
+
+    padding:10px 12px;
+
+
+    border:
+
+    1px solid #ccc;
+
+
+    border-radius:8px;
+
+
+    font-size:15px;
+
+
+    outline:none;
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+.salary-input:focus,
+.number-input:focus,
+.date-input:focus,
+.select-input:focus,
+.ggn-day-card input:focus{
+
+
+    border-color:#1f4e79;
+
+
+}
+
+
+
+
+.salary-total{
+
+
+    background:#f1f1f1;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+.ggn-day-card .salary-total{
+
+
+    background:#f1f1f1;
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+.number-input{
+
+
+    text-align:left;
+
+
+}
+
+
+
+
+.select-input{
+
+
+    cursor:pointer;
+
+
+}
+
+
+
+/* =====================================================
+   RESULT SECTION TITLE
+===================================================== */
+
+
+.result-title{
+
+
+    text-align:center;
+
+    color:#1f4e79;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    margin-bottom:15px;
+
+
+}
+/* =====================================================
+   BUTTON SYSTEM
+===================================================== */
+
+
+/* Button container */
+
+.button-group{
+
+
+    display:flex;
+
+
+    gap:12px;
+
+
+    margin-top:20px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+/* Standard button */
+
+
+.btn,
+.button-group button{
+
+
+    flex:1;
+
+
+    border:none;
+
+
+    padding:12px;
+
+
+    border-radius:8px;
+
+
+    font-size:16px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    transition:.2s;
+
+
+    background:#1f4e79;
+
+
+    color:white;
+
+
+}
+
+
+
+
+.button-group button:hover{
+
+
+    opacity:.9;
+
+
+}
+
+
+
+/* Primary button */
+
+
+.btn-primary{
+
+
+    background:#1f4e79;
+
+
+    color:white;
+
+
+}
+
+
+
+.btn-primary:hover{
+
+
+    background:#163a5c;
+
+
+}
+
+
+
+/* Reset button standard */
+
+
+.btn-reset,
+.reset-btn{
+
+
+    background:#dc3545 !important;
+
+
+    color:white;
+
+
+}
+
+
+
+.btn-reset:hover,
+.reset-btn:hover{
+
+
+    background:#b52a37 !important;
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   RESULT BOX
+===================================================== */
+
+
+.result-box,
+.result-section{
+
+
+    background:#f8fafc;
+
+
+    border-left:
+
+    5px solid #1f4e79;
+
+
+    padding:15px;
+
+
+    border-radius:8px;
+
+
+    margin-top:20px;
+
+
+}
+
+
+
+
+.result-box h3,
+.result-section h3{
+
+
+    text-align:center;
+
+
+    color:#1f4e79;
+
+
+    font-size:18px;
+
+
+    font-weight:bold;
+
+
+    margin-bottom:15px;
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   OLD RESULT FORMAT
+   Existing calculators
+===================================================== */
+
+
+.result-box p{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    gap:10px;
+
+
+    margin-bottom:10px;
+
+
+    font-size:15px;
+
+
+}
+
+
+
+
+.result-box span{
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   RESULT ROW SYSTEM
+   Used by:
+   - Seksyen 18A
+   - GGN Hari
+===================================================== */
+
+
+.result-row{
+
+
+    display:flex;
+
+
+    justify-content:space-between;
+
+
+    align-items:center;
+
+
+    width:100%;
+
+
+    margin-bottom:12px;
+
+
+    font-size:15px;
+
+
+    gap:15px;
+
+
+}
+
+
+
+
+/* Label sebelah kiri */
+
+
+.result-row label{
+
+
+    font-weight:bold;
+
+
+    color:#333;
+
+
+    flex:1;
+
+
+}
+
+
+
+
+
+/* Value sebelah kanan */
+
+
+.result-row input,
+.result-row strong,
+.result-row span{
+
+
+    font-weight:bold;
+
+
+    text-align:right;
+
+
+    min-width:120px;
+
+
+    color:#111;
+
+
+}
+
+
+
+
+
+/* GGN Day readonly result */
+
+
+.result-row .salary-total{
+
+
+    background:#f1f1f1;
+
+
+    border:1px solid #ccc;
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   RESULT DIVIDER
+   GGN Day
+===================================================== */
+
+
+.result-divider{
+
+
+    border:none;
+
+
+    border-top:
+
+    1px solid #ddd;
+
+
+    margin:
+
+    25px 0;
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   SEKsyen 18A BREAKDOWN
+===================================================== */
+
+
+.section18a-breakdown{
+
+
+    width:100%;
+
+
+    margin-top:15px;
+
+
+    border-radius:8px;
+
+
+    overflow:hidden;
+
+
+}
+
+
+
+
+
+
+.section18a-header,
+.section18a-row{
+
+
+    display:grid;
+
+
+    grid-template-columns:
+
+    1.3fr
+
+    1fr
+
+    1fr;
+
+
+    border-bottom:
+
+    1px solid #ddd;
+
+
+}
+
+
+
+
+
+.section18a-header{
+
+
+    background:#1f4e79;
+
+
+    color:white;
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+.section18a-row{
+
+
+    background:white;
+
+
+}
+
+
+
+
+
+
+.section18a-header span,
+.section18a-row span{
+
+
+    padding:10px;
+
+
+    text-align:center;
+
+
+    font-size:14px;
+
+
+}
+
+
+
+
+
+
+.section18a-row:first-child{
+
+
+    font-weight:bold;
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   WARNING BOX
+===================================================== */
+
+
+.warning-box{
+
+
+    margin-top:30px;
+
+
+    background:#fff3cd;
+
+
+    border-left:
+
+    6px solid #ffc107;
+
+
+    padding:20px;
+
+
+    border-radius:10px;
+
+
+}
+
+
+
+
+
+.warning-box h3{
+
+
+    color:#856404;
+
+
+    margin-bottom:15px;
+
+
+    text-align:center;
+
+
+}
+
+
+
+
+
+.warning-box ol{
+
+
+    padding-left:25px;
+
+
+}
+
+
+
+
+
+.warning-box li{
+
+
+    margin-bottom:10px;
+
+
+    line-height:1.5;
+
+
+    color:#555;
+
+
+}
+
+
+
+
+
+
+/* =====================================================
+   HORIZONTAL LINE
+===================================================== */
+
+
+hr{
+
+
+    border:none;
+
+
+    border-top:
+
+    1px solid #ddd;
+
+
+    margin:25px 0;
+
+
+}
+/* =====================================================
+   RESPONSIVE DESIGN
+===================================================== */
+
+
+/* =====================================================
+   TABLET
+===================================================== */
+
+
+@media screen and (max-width:1100px){
+
+
+    body{
+
+
+        padding:15px;
+
+
+    }
+
+
+
+
+    .page-title h1{
+
+
+        font-size:30px;
+
+
+    }
+
+
+
+
+
+    .calculator-grid{
+
+
+        grid-template-columns:
+
+        repeat(
+
+            2,
+
+            minmax(300px,1fr)
+
+        );
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+
+@media screen and (max-width:700px){
+
+
+
+    body{
+
+
+        padding:10px;
+
+
+    }
+
+
+
+
+
+    .page-title h1{
+
+
+        font-size:24px;
+
+
+    }
+
+
+
+
+
+    .page-title p{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+
+    .calculator-grid{
+
+
+        grid-template-columns:
+
+        1fr;
+
+
+        gap:15px;
+
+
+    }
+
+
+
+
+
+    .calculator-card{
+
+
+        padding:16px;
+
+
+        border-radius:12px;
+
+
+    }
+
+
+
+
+
+
+    .calculator-card h2{
+
+
+        font-size:20px;
+
+
+    }
+
+
+
+
+
+    .ggn-day-card h2{
+
+
+        font-size:20px;
+
+
+    }
+
+
+
+
+
+    .notice-type-title{
+
+
+        font-size:15px;
+
+
+    }
+
+
+
+
+
+
+
+    .button-group{
+
+
+        flex-direction:column;
+
+
+    }
+
+
+
+
+
+    .btn,
+    .button-group button{
+
+
+        width:100%;
+
+
+    }
+
+
+
+
+
+    .result-box p{
+
+
+        flex-direction:column;
+
+
+        gap:5px;
+
+
+    }
+
+
+
+
+
+    /*
+       Kekalkan result row
+       label kiri
+       value kanan
+    */
+
+
+    .result-row{
+
+
+        flex-direction:row;
+
+
+        align-items:center;
+
+
+    }
+
+
+
+
+
+    .result-row label{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+
+    .result-row input,
+    .result-row strong{
+
+
+        text-align:right;
+
+
+        min-width:110px;
+
+
+        font-size:14px;
+
+
+    }
+
+
+}
+
+
+
+
+
+
+
+
+/* =====================================================
+   SMALL MOBILE
+===================================================== */
+
+
+@media screen and (max-width:400px){
+
+
+
+    .page-title h1{
+
+
+        font-size:21px;
+
+
+    }
+
+
+
+
+
+    .calculator-card{
+
+
+        padding:12px;
+
+
+    }
+
+
+
+
+
+    input,
+    select{
+
+
+        font-size:14px;
+
+
+    }
+
+
+
+
+
+    .result-row{
+
+
+        gap:8px;
+
+
+    }
+
+
+
+
+
+    .result-row input,
+    .result-row strong{
+
+
+        min-width:90px;
+
+
+        font-size:13px;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   ACCESSIBILITY
+===================================================== */
+
+
+button:focus,
+input:focus,
+select:focus{
+
+
+    outline:
+
+    2px solid #1f4e79;
+
+
+    outline-offset:2px;
+
+
+}
+
+
+
+
+
+button{
+
+
+    user-select:none;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   REMOVE NUMBER INPUT ARROW
+   PROFESSIONAL LOOK
+===================================================== */
+
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button{
+
+
+    opacity:.5;
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   PRINT VERSION
+===================================================== */
+
+
+@media print{
+
+
+
+    body{
+
+
+        background:white;
+
+
+    }
+
+
+
+
+
+    .button-group{
+
+
+        display:none;
+
+
+    }
+
+
+
+
+
+    .calculator-card{
+
+
+        box-shadow:none;
+
+
+        border:
+
+        1px solid #ddd;
+
+
+        break-inside:avoid;
+
+
+    }
+
+
+
+
+
+    .warning-box{
+
+
+        border:
+
+        1px solid #ddd;
+
+
+    }
+
+
+
+}
+
+
+
+
+
+
+
+
+
+/* =====================================================
+   END
+   KALKULATOR AKTA KERJA 1955
+   PROFESSIONAL STYLE.CSS
+   FINAL PATCH V2
+===================================================== */
