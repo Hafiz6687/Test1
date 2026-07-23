@@ -2978,7 +2978,7 @@ function autoGGNDayEndDate(){
 
 function calculateGGNDay(){
 
-alert("GGN DAY FUNCTION RUN");
+
     
     let totalSalary =
     updateSalaryTotal(
