@@ -1703,47 +1703,30 @@ GGN HARI - FORMAT KEPUTUSAN (SAMA SEPERTI GGN MINGGU)
 =====================================================*/
 
 .ggn-day-card .result-section{
-
     background:#f7f8fb;
-
     border-left:4px solid #1d4f91;
-
     border-radius:8px;
-
     padding:14px 18px;
-
     margin-top:20px;
-
 }
-
 
 .ggn-day-card .result-title{
-
     margin:0 0 12px;
-
     text-align:center;
-
     color:#1d4f91;
-
     font-size:22px;
-
     font-weight:700;
-
 }
-
 
 .ggn-day-card .result-row{
 
     display:flex;
-
     justify-content:space-between;
-
     align-items:center;
 
     padding:4px 0;
 
 }
-
 
 .ggn-day-card .result-label{
 
@@ -1756,7 +1739,6 @@ GGN HARI - FORMAT KEPUTUSAN (SAMA SEPERTI GGN MINGGU)
     white-space:nowrap;
 
 }
-
 
 .ggn-day-card .result-value{
 
@@ -1771,7 +1753,6 @@ GGN HARI - FORMAT KEPUTUSAN (SAMA SEPERTI GGN MINGGU)
     white-space:nowrap;
 
 }
-
 
 /* buang garisan antara baris */
 
