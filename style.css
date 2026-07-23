@@ -1593,29 +1593,6 @@ input[type=number]::-webkit-outer-spin-button{
 
 
 
-/* =====================================================
-   GGN DAY RESULT - REMOVE INPUT BOX ONLY
-===================================================== */
-
-.ggn-day-card .result-row input.salary-total{
-
-    background:transparent !important;
-
-    border:none !important;
-
-    padding:5px 0 !important;
-
-    box-shadow:none !important;
-
-    text-align:right;
-
-    font-weight:bold;
-
-    color:#333;
-
-}
-
-
 
 
 
