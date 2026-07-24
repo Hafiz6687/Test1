@@ -1727,7 +1727,60 @@ input[type=number]::-webkit-outer-spin-button{
     }
 
 
+/* =====================================================
+   FINAL ALIGNMENT PATCH
+   GGN DAY + OT HARI KELEPASAN
+===================================================== */
 
+
+/* GGN Hari */
+
+.ggn-day-card .result-row span,
+.ggn-day-card .result-row strong,
+.ggn-day-card .result-value,
+#ggnDayAmount{
+
+    display:block;
+
+    min-width:120px;
+
+    text-align:right;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#111;
+
+    white-space:nowrap;
+
+}
+
+
+
+/* OT Hari Kelepasan */
+
+.ot-holiday-card .result-row span,
+.ot-holiday-card .result-row strong,
+.ot-holiday-card .result-value,
+#otHolidayAmount,
+#holidayAmount{
+
+    display:block;
+
+    min-width:120px;
+
+    text-align:right;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#111;
+
+    white-space:nowrap;
+
+}
 }
 /* =====================================================
    END
