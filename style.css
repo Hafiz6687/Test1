@@ -1621,11 +1621,11 @@ input[type=number]::-webkit-outer-spin-button{
 
 .ggn-day-card .result-row{
 
-    display:flex;
+    display:grid;
 
-    justify-content:space-between;
+    grid-template-columns:1fr auto;
 
-    align-items:flex-start;
+    align-items:center;
 
     width:100%;
 
@@ -1677,19 +1677,6 @@ input[type=number]::-webkit-outer-spin-button{
 
 }
 
-.ggn-day-card .result-label{
-
-    font-size:14px;
-
-    font-weight:600;
-
-    color:#333;
-
-    line-height:1.3;
-
-    white-space:nowrap;
-
-}
 
 .ggn-day-card .result-value{
 
