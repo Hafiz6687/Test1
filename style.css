@@ -1033,8 +1033,6 @@ body{
 
 
 
-/* Left label */
-
 .result-row label,
 .result-label{
 
@@ -1048,8 +1046,9 @@ body{
 
     text-align:left;
 
-}
+    justify-self:start;
 
+}
 
 
 /* Right value */
