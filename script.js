@@ -1206,21 +1206,16 @@ function calculateHariRehat(){
 
 
 
-    let ORP =
-    totalSalary / 26;
+let ORP =
+totalSalary / 26;
 
 
-
-    let daily =
-    ORP;
-
+let daily =
+ORP * 0.5;
 
 
-    let amount =
-    daily * days * 0.5;
-
-
-
+let amount =
+daily * days;
 
 
 
