@@ -754,18 +754,22 @@ body{
 /* Label sebelah kiri */
 
 
+.result-row label,
+.result-label{
 
-.result-row label{
+    font-size:14px;
 
-    font-weight:bold;
+    font-weight:600;
 
     color:#333;
 
+    line-height:1.25;
+
     text-align:left;
 
+    justify-self:start;
+
 }
-
-
 
 
 /* Value sebelah kanan */
