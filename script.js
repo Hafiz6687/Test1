@@ -3342,26 +3342,17 @@ function calculatePH(){
 
 
 
-
-    let ORP =
-    totalSalary / 26;
-
+let ORP =
+totalSalary / 26;
 
 
+let daily =
+ORP * 2;
 
 
-    let daily =
-    ORP;
-
-
-
-
-
-    let amount =
-    daily *
-    days *
-    2;
-
+let amount =
+daily *
+days;
 
 
 
