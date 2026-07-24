@@ -1834,6 +1834,64 @@ input[type=number]::-webkit-outer-spin-button{
     color:#111;
 
 }
+   /* =====================================================
+   SEKSYEN 18A BREAKDOWN ALIGNMENT
+===================================================== */
+
+.section18a-row{
+
+    display:grid;
+
+    grid-template-columns:1fr auto auto;
+
+    align-items:center;
+
+    gap:20px;
+
+}
+
+
+.section18a-row span:first-child{
+
+    text-align:left;
+
+    justify-self:start;
+
+}
+
+
+.section18a-row span:not(:first-child){
+
+    text-align:right;
+
+    justify-self:end;
+
+}
+
+
+
+/* =====================================================
+   RESULT ROW LABEL ALIGNMENT
+   SEK 18A + OTHER RESULT ROWS
+===================================================== */
+
+.result-row label,
+.result-row span:first-child,
+.result-label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#333;
+
+    line-height:1.4;
+
+    text-align:left;
+
+    justify-self:start;
+
+}
 }
 /* =====================================================
    END
