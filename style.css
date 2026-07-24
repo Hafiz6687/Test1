@@ -1726,72 +1726,9 @@ input[type=number]::-webkit-outer-spin-button{
 
     }
 
-
 /* =====================================================
-   FINAL ALIGNMENT PATCH
-   GGN DAY + OT HARI KELEPASAN
+   GGN DAY RESULT FINAL
 ===================================================== */
-
-
-/* GGN Hari */
-
-.ggn-day-card .result-row span,
-.ggn-day-card .result-row strong,
-.ggn-day-card .result-value,
-#ggnDayAmount{
-
-    display:block;
-
-    min-width:120px;
-
-    text-align:right;
-
-    font-size:14px;
-
-    font-weight:700;
-
-    color:#111;
-
-    white-space:nowrap;
-
-}
-
-
-
-/* OT Hari Kelepasan */
-
-.ot-holiday-card .result-row span,
-.ot-holiday-card .result-row strong,
-.ot-holiday-card .result-value,
-#otHolidayAmount,
-#holidayAmount{
-
-    display:block;
-
-    min-width:120px;
-
-    text-align:right;
-
-    font-size:14px;
-
-    font-weight:700;
-
-    color:#111;
-
-    white-space:nowrap;
-
-}
-
-/* =====================================================
-   FINAL RESULT ALIGNMENT FIX
-   GGN DAY + OT HARI KELEPASAN
-===================================================== */
-
-
-/* =====================================================
-   GGN DAY RESULT
-===================================================== */
-
 
 .ggn-day-card .result-section{
 
@@ -1807,25 +1744,21 @@ input[type=number]::-webkit-outer-spin-button{
 }
 
 
-
 .ggn-day-card .result-row{
 
     display:grid;
 
-    grid-template-columns:
-
-    1fr auto;
+    grid-template-columns:1fr auto;
 
     align-items:center;
 
-    gap:15px;
+    gap:10px;
 
     padding:3px 0;
 
     margin:0;
 
 }
-
 
 
 .ggn-day-card .result-label{
@@ -1841,16 +1774,7 @@ input[type=number]::-webkit-outer-spin-button{
 }
 
 
-
 .ggn-day-card .result-value{
-
-    width:auto;
-
-    min-width:90px;
-
-    padding:0;
-
-    margin:0;
 
     font-size:14px;
 
@@ -1858,117 +1782,59 @@ input[type=number]::-webkit-outer-spin-button{
 
     color:#111;
 
-    text-align:right;
-
-    white-space:nowrap;
-
-}
-
-
-
-
-
-/* =====================================================
-   OT HARI KELEPASAN RESULT
-===================================================== */
-
-
-.calculator-card .result-box p{
-
-
-    display:grid;
-
-    grid-template-columns:
-
-    minmax(180px,1fr)
-
-    auto;
-
-
-    align-items:center;
-
-    gap:10px;
-
-
-    margin-bottom:6px;
-
-
-}
-
-
-
-.calculator-card .result-box strong{
-
-
-    font-size:14px;
-
-    line-height:1.2;
-
-    white-space:nowrap;
-
-
-}
-
-
-
-.calculator-card .result-box span{
-
-
     min-width:100px;
 
     text-align:right;
 
     white-space:nowrap;
 
-    font-weight:bold;
+}
+   /* =====================================================
+   OT HARI KELEPASAN RESULT FINAL
+===================================================== */
 
+
+.ot-ph-result p{
+
+    display:grid;
+
+    grid-template-columns:1fr auto;
+
+    align-items:center;
+
+    gap:10px;
+
+    margin-bottom:6px;
 
 }
 
 
+.ot-ph-result strong{
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#333;
+
+}
 
 
-/* Allow only label wrapping where necessary */
+.ot-ph-result span{
 
-#otPHHourly{
+    min-width:110px;
+
+    text-align:right;
 
     white-space:nowrap;
 
-}
+    font-size:14px;
 
+    font-weight:700;
 
-
-
-
-@media(max-width:700px){
-
-
-.ggn-day-card .result-row{
-
-
-    grid-template-columns:
-
-    1fr auto;
-
+    color:#111;
 
 }
-
-
-
-.calculator-card .result-box p{
-
-
-    grid-template-columns:
-
-    1fr auto;
-
-
-}
-
-
-
-}
-   
 }
 /* =====================================================
    END
