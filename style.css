@@ -489,6 +489,139 @@ body{
 }
 
 
+/* =====================================================
+   BUTTON SYSTEM
+===================================================== */
+
+
+/* Button container */
+
+.button-group{
+
+
+    display:flex;
+
+
+    gap:12px;
+
+
+    margin-top:20px;
+
+
+    margin-bottom:20px;
+
+
+}
+
+
+
+/* Standard button */
+
+
+.btn,
+.button-group button{
+
+
+    flex:1;
+
+
+    border:none;
+
+
+    padding:12px;
+
+
+    border-radius:8px;
+
+
+    font-size:16px;
+
+
+    font-weight:bold;
+
+
+    cursor:pointer;
+
+
+    transition:.2s;
+
+
+    background:#1f4e79;
+
+
+    color:white;
+
+
+}
+
+
+
+
+.button-group button:hover{
+
+
+    opacity:.9;
+
+
+}
+
+
+
+/* Primary button */
+
+
+.btn-primary{
+
+
+    background:#1f4e79;
+
+
+    color:white;
+
+
+}
+
+
+
+.btn-primary:hover{
+
+
+    background:#163a5c;
+
+
+}
+
+
+
+/* Reset button standard */
+
+
+.btn-reset,
+.reset-btn{
+
+
+    background:#dc3545 !important;
+
+
+    color:white;
+
+
+}
+
+
+
+.btn-reset:hover,
+.reset-btn:hover{
+
+
+    background:#b52a37 !important;
+
+
+}
+
+
+
+
 
 /* =====================================================
    RESULT SECTION
