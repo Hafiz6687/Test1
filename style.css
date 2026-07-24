@@ -754,20 +754,16 @@ body{
 /* Label sebelah kiri */
 
 
-.result-row label{
 
+.result-row label{
 
     font-weight:bold;
 
-
     color:#333;
 
-
-    flex:1;
-
+    text-align:left;
 
 }
-
 
 
 
@@ -1752,7 +1748,7 @@ input[type=number]::-webkit-outer-spin-button{
 
     align-items:center;
 
-    gap:10px;
+    gap:8px;
 
     padding:3px 0;
 
