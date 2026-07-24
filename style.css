@@ -1782,16 +1782,15 @@ input[type=number]::-webkit-outer-spin-button{
 
 }
 
-   /* =====================================================
-   FINAL RESULT CLEANUP PATCH
+/* =====================================================
+   FINAL RESULT ALIGNMENT FIX
    GGN DAY + OT HARI KELEPASAN
 ===================================================== */
 
 
-/* ================================
+/* =====================================================
    GGN DAY RESULT
-   Reduce vertical spacing
-================================ */
+===================================================== */
 
 
 .ggn-day-card .result-section{
@@ -1808,64 +1807,114 @@ input[type=number]::-webkit-outer-spin-button{
 }
 
 
+
 .ggn-day-card .result-row{
-
-    padding:4px 0;
-
-    gap:10px;
-
-}
-
-
-.ggn-day-card .result-label{
-
-    line-height:1.2;
-
-}
-
-
-.ggn-day-card .result-value{
-
-    min-width:100px;
-
-    line-height:1.2;
-
-}
-
-
-
-
-
-/* ================================
-   OT HARI KELEPASAN RESULT
-   Keep RM amount in one line
-================================ */
-
-
-.result-box p{
 
     display:grid;
 
     grid-template-columns:
 
-    minmax(0,1fr)
-
-    auto;
+    1fr auto;
 
     align-items:center;
 
     gap:15px;
 
-    margin-bottom:6px;
+    padding:3px 0;
+
+    margin:0;
+
+}
+
+
+
+.ggn-day-card .result-label{
+
+    font-size:14px;
+
+    font-weight:600;
+
+    color:#333;
+
+    line-height:1.2;
+
+}
+
+
+
+.ggn-day-card .result-value{
+
+    width:auto;
+
+    min-width:90px;
+
+    padding:0;
+
+    margin:0;
+
+    font-size:14px;
+
+    font-weight:700;
+
+    color:#111;
+
+    text-align:right;
+
+    white-space:nowrap;
 
 }
 
 
 
 
-.result-box span{
 
-    min-width:110px;
+/* =====================================================
+   OT HARI KELEPASAN RESULT
+===================================================== */
+
+
+.calculator-card .result-box p{
+
+
+    display:grid;
+
+    grid-template-columns:
+
+    minmax(180px,1fr)
+
+    auto;
+
+
+    align-items:center;
+
+    gap:10px;
+
+
+    margin-bottom:6px;
+
+
+}
+
+
+
+.calculator-card .result-box strong{
+
+
+    font-size:14px;
+
+    line-height:1.2;
+
+    white-space:nowrap;
+
+
+}
+
+
+
+.calculator-card .result-box span{
+
+
+    min-width:100px;
 
     text-align:right;
 
@@ -1873,48 +1922,53 @@ input[type=number]::-webkit-outer-spin-button{
 
     font-weight:bold;
 
+
 }
 
 
 
 
+/* Allow only label wrapping where necessary */
 
-/* Prevent RM value breaking */
-
-#otPHResultTotal,
-#otPHORP,
-#otPHHourly,
-#otPHAmount{
+#otPHHourly{
 
     white-space:nowrap;
 
-    min-width:110px;
-
-    text-align:right;
-
 }
 
 
 
 
-/* Mobile adjustment */
 
-@media screen and (max-width:700px){
+@media(max-width:700px){
 
-    .result-box p{
 
-        grid-template-columns:
+.ggn-day-card .result-row{
 
-        minmax(0,1fr)
 
-        auto;
+    grid-template-columns:
 
-        gap:8px;
-
-    }
+    1fr auto;
 
 
 }
+
+
+
+.calculator-card .result-box p{
+
+
+    grid-template-columns:
+
+    1fr auto;
+
+
+}
+
+
+
+}
+   
 }
 /* =====================================================
    END
