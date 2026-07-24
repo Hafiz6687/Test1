@@ -3656,7 +3656,51 @@ function formatDateInput(date){
     );
 
 }
+// =====================================================
+// AUTO TARIKH AKHIR NOTIS - GGN MINGGU
+// =====================================================
 
+function autoGGNWeekEndDate(){
+
+    let start =
+    getElement("ggnWeekStartDate");
+
+    let minggu =
+    getElement("ggnWeekNotice");
+
+    let end =
+    getElement("ggnWeekEndDate");
+
+    if(
+        !start ||
+        !minggu ||
+        !end
+    ){
+        return;
+    }
+
+    if(
+        !start.value ||
+        Number(minggu.value) <= 0
+    ){
+        end.value = "";
+        return;
+    }
+
+    let date =
+    new Date(start.value);
+
+    date.setDate(
+        date.getDate()
+        +
+        (Number(minggu.value) * 7)
+        -
+        1
+    );
+
+    end.value =
+    formatDateInput(date);
+}
 
 // =====================================================
 // KALKULATOR GAJI GANTI NOTIS (MINGGU)
@@ -3770,6 +3814,25 @@ document.addEventListener(
 "DOMContentLoaded",
 function(){
 
-    // Tiada initialization diperlukan buat masa ini.
+    let start =
+    getElement("ggnWeekStartDate");
+
+    let minggu =
+    getElement("ggnWeekNotice");
+
+    if(start){
+        start.addEventListener(
+            "change",
+            autoGGNWeekEndDate
+        );
+    }
+
+    if(minggu){
+        minggu.addEventListener(
+            "input",
+            autoGGNWeekEndDate
+        );
+    }
 
 });
+
