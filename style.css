@@ -1892,6 +1892,73 @@ input[type=number]::-webkit-outer-spin-button{
     justify-self:start;
 
 }
+   /* =====================================================
+   FORCE SEKSYEN 18A RESULT ALIGNMENT
+===================================================== */
+
+
+.result-box .result-row{
+
+    display:grid !important;
+
+    grid-template-columns:1fr auto !important;
+
+    align-items:center !important;
+
+}
+
+
+.result-box .result-row > span:first-child,
+.result-box .result-row > label{
+
+    text-align:left !important;
+
+    justify-self:start !important;
+
+}
+
+
+.result-box .result-row > strong,
+.result-box .result-row > span:not(:first-child){
+
+    text-align:right !important;
+
+    justify-self:end !important;
+
+}
+
+
+
+/* BREAKDOWN */
+
+.section18a-row{
+
+    display:grid !important;
+
+    grid-template-columns:minmax(0,1fr) auto auto !important;
+
+    align-items:center !important;
+
+}
+
+
+.section18a-row > span:first-child{
+
+    text-align:left !important;
+
+    justify-self:start !important;
+
+}
+
+
+.section18a-row > span:nth-child(2),
+.section18a-row > span:nth-child(3){
+
+    text-align:right !important;
+
+    justify-self:end !important;
+
+}
 }
 /* =====================================================
    END
